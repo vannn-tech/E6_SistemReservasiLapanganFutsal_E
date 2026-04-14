@@ -109,10 +109,10 @@ namespace Reservasi_Futsal
                     MessageBox.Show("Gagal mengambil data: " + ex.Message);
                 }
             }
-            HitungTotalRecord();
+            HitungTotalRecord(); 
         }
 
-        private void btnInsert_Click(object sender, EventArgs e)
+        private void btnInsert_Click(object sender, EventArgs e) // Event handler untuk tombol "Insert" yang digunakan untuk menambahkan data baru ke tabel Lapangan
         {
             if (string.IsNullOrEmpty(txtNama.Text) || string.IsNullOrEmpty(cmbStatus.Text))
             {
