@@ -156,7 +156,7 @@ namespace Reservasi_Futsal
                     cmd.Parameters.AddWithValue("@status", cmbStatus.Text);
 
                     conn.Open();
-                    cmd.ExecuteNonQuery(); 
+                    cmd.ExecuteNonQuery(); // Menjalankan perintah SQL untuk memperbarui data di tabel Lapangan berdasarkan ID yang dipilih
                     MessageBox.Show("Data Berhasil Diperbarui!");
                     TampilkanData();
                 }
@@ -181,7 +181,7 @@ namespace Reservasi_Futsal
                     cmd.Parameters.AddWithValue("@id", txtID.Text);
 
                     conn.Open();
-                    cmd.ExecuteNonQuery(); 
+                    cmd.ExecuteNonQuery(); // Menjalankan perintah SQL untuk menghapus data dari tabel Lapangan berdasarkan ID yang dipilih
                     MessageBox.Show("Data Terhapus!");
                     TampilkanData();
                 }
