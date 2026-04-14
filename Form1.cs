@@ -45,11 +45,11 @@ namespace Reservasi_Futsal
                 try // Mencoba membuka koneksi untuk memastikan database dapat diakses saat tombol "Connect" ditekan
                 {
                     conn.Open();
-                    MessageBox.Show("Koneksi Database Berhasil!", "Status Koneksi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Koneksi Database Berhasil!", "Status Koneksi", MessageBoxButtons.OK, MessageBoxIcon.Information); // Menampilkan pesan sukses jika koneksi berhasil
                 }
                 catch (Exception ex) // Menangkap dan menampilkan pesan error jika koneksi gagal
                 {
-                    MessageBox.Show("Koneksi Gagal: " + ex.Message, "Error Koneksi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Koneksi Gagal: " + ex.Message, "Error Koneksi", MessageBoxButtons.OK, MessageBoxIcon.Error); // Menampilkan pesan error jika koneksi gagal
                 }
             }
         }
