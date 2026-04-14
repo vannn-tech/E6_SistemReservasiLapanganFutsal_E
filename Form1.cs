@@ -72,11 +72,11 @@ namespace Reservasi_Futsal
 
         private void btnTampilkan_Click(object sender, EventArgs e) // Event handler untuk tombol "Tampilkan" yang digunakan untuk menampilkan data dari tabel Lapangan ke DataGridView
         {
-            TampilkanData();
-            MessageBox.Show("Berhasil Menampilkan Data.", "Informasi");
+            TampilkanData(); 
+            MessageBox.Show("Berhasil Menampilkan Data.", "Informasi"); 
         }
 
-        private void TampilkanData()
+        private void TampilkanData() // Method untuk mengambil data dari tabel Lapangan dan menampilkannya di DataGridView
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("LapanganID");
