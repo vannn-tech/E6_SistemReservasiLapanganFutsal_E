@@ -201,7 +201,7 @@ namespace Reservasi_Futsal
                     string kataKunci = txtCari.Text.Trim();
                     cmd.Parameters.AddWithValue("@cari", "%" + kataKunci + "%");
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd); // Menggunakan SqlDataAdapter untuk menjalankan query dan mengisi DataTable dengan hasil pencarian
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
 
