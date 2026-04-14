@@ -40,7 +40,7 @@ namespace Reservasi_Futsal
 
         private void btnConnect_Click(object sender, EventArgs e) // Event handler untuk tombol "Connect" yang digunakan untuk menguji koneksi ke database
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString)) // Membuat objek koneksi ke database
             {
                 try
                 {
