@@ -230,7 +230,7 @@ namespace Reservasi_Futsal
                 cmbStatus.Text = row.Cells["Status"].Value.ToString();
             }
         }
-
+        // Event handler kosong untuk menangani klik pada sel di DataGridView, yang tidak digunakan dalam aplikasi ini
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
         private void label1_Click(object sender, EventArgs e) { }
         private void label4_Click(object sender, EventArgs e) { }
