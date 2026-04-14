@@ -242,7 +242,7 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.dgvLapangan);
             this.Name = "Form1";
-            this.Text = "Reservasi";
+            this.Text = "Admin";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLapangan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
