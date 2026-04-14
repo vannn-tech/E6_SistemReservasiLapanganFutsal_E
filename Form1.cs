@@ -42,12 +42,12 @@ namespace Reservasi_Futsal
         {
             using (SqlConnection conn = new SqlConnection(connectionString)) // Membuat objek koneksi ke database
             {
-                try
+                try // Mencoba membuka koneksi untuk memastikan database dapat diakses saat tombol "Connect" ditekan
                 {
                     conn.Open();
                     MessageBox.Show("Koneksi Database Berhasil!", "Status Koneksi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                catch (Exception ex)
+                catch (Exception ex) // Menangkap dan menampilkan pesan error jika koneksi gagal
                 {
                     MessageBox.Show("Koneksi Gagal: " + ex.Message, "Error Koneksi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
