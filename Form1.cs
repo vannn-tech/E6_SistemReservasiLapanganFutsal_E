@@ -120,7 +120,7 @@ namespace Reservasi_Futsal
                 return;
             }
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString)) 
             {
                 string query = "INSERT INTO Lapangan (NamaLapangan, Lokasi, Status) VALUES (@nama, @lokasi, @status)";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -129,7 +129,7 @@ namespace Reservasi_Futsal
                 cmd.Parameters.AddWithValue("@status", cmbStatus.Text);
 
                 conn.Open();
-                cmd.ExecuteNonQuery(); 
+                cmd.ExecuteNonQuery(); // Menjalankan perintah SQL untuk memasukkan data baru ke tabel Lapangan
                 MessageBox.Show("Data Lapangan Berhasil Ditambahkan!");
                 TampilkanData();
             }
