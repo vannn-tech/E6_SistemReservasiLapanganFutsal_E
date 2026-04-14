@@ -219,7 +219,7 @@ namespace Reservasi_Futsal
             }
         }
 
-        private void dgvLapangan_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvLapangan_CellClick(object sender, DataGridViewCellEventArgs e) // Event handler untuk menangani klik pada sel di DataGridView, yang akan menampilkan data dari baris yang dipilih ke TextBox dan ComboBox untuk memudahkan proses update atau delete
         {
             if (e.RowIndex >= 0)
             {
