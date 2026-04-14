@@ -18,7 +18,7 @@ namespace Reservasi_Futsal
 
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); // Inisialisasi komponen visual form
         }
 
         private void Form1_Load(object sender, EventArgs e)
