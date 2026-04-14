@@ -27,7 +27,7 @@ namespace Reservasi_Futsal
 
             using (SqlConnection conn = new SqlConnection(connectionString)) // Membuat objek koneksi ke database
             {
-                try
+                try // Mencoba membuka koneksi untuk memastikan database dapat diakses saat aplikasi dijalankan
                 {
                     conn.Open();
                 }
