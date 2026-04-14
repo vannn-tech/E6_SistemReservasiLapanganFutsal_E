@@ -25,7 +25,7 @@ namespace Reservasi_Futsal
         {
             txtID.ReadOnly = true; // Mengatur TextBox ID agar tidak bisa diinput manual (Primary Key)
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString)) // Membuat objek koneksi ke database
             {
                 try
                 {
