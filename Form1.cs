@@ -61,7 +61,7 @@ namespace Reservasi_Futsal
                 try // Mencoba menjalankan query untuk menghitung total record di tabel Lapangan
                 {
                     string query = "SELECT COUNT(*) FROM Lapangan";
-                    SqlCommand cmd = new SqlCommand(query, conn);
+                    SqlCommand cmd = new SqlCommand(query, conn); // Membuat objek SqlCommand dengan query untuk menghitung total record
                     conn.Open();
                     int total = (int)cmd.ExecuteScalar(); 
                     lblTotal.Text = "Total Record: " + total.ToString();
