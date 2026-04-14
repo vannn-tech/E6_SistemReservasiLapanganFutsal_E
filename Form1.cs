@@ -13,6 +13,7 @@ namespace Reservasi_Futsal
 {
     public partial class Form1 : Form
     {
+        // Mendefinisikan alamat database (Server, Nama Database, dan Keamanan)
         string connectionString = @"Data Source=LAPTOP-5R80O1Q5\MSSQLSERVER01;Initial Catalog=DBFutsalADO;Integrated Security=True";
 
         public Form1()
