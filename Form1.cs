@@ -135,7 +135,7 @@ namespace Reservasi_Futsal
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e) // Event handler untuk tombol "Update" yang digunakan untuk memperbarui data yang sudah ada di tabel Lapangan
         {
             if (string.IsNullOrEmpty(txtID.Text))
             {
