@@ -54,7 +54,7 @@ namespace Reservasi_Futsal
             }
         }
 
-        private void HitungTotalRecord()
+        private void HitungTotalRecord() // Method untuk menghitung total record di tabel Lapangan dan menampilkannya di label lblTotal
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
