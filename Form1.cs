@@ -23,7 +23,7 @@ namespace Reservasi_Futsal
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtID.ReadOnly = true;
+            txtID.ReadOnly = true; // Mengatur TextBox ID agar tidak bisa diinput manual (Primary Key)
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
