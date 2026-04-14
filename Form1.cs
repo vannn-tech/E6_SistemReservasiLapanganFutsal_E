@@ -58,7 +58,7 @@ namespace Reservasi_Futsal
         {
             using (SqlConnection conn = new SqlConnection(connectionString)) // Membuat objek koneksi ke database
             {
-                try
+                try // Mencoba menjalankan query untuk menghitung total record di tabel Lapangan
                 {
                     string query = "SELECT COUNT(*) FROM Lapangan";
                     SqlCommand cmd = new SqlCommand(query, conn);
