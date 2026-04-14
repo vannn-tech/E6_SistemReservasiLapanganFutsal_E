@@ -163,7 +163,7 @@ namespace Reservasi_Futsal
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e) // Event handler untuk tombol "Delete" yang digunakan untuk menghapus data yang sudah ada di tabel Lapangan
         {
             if (string.IsNullOrEmpty(txtID.Text))
             {
