@@ -188,7 +188,7 @@ namespace Reservasi_Futsal
             }
         }
 
-        private void btnCari_Click(object sender, EventArgs e)
+        private void btnCari_Click(object sender, EventArgs e) // Event handler untuk tombol "Cari" yang digunakan untuk mencari data di tabel Lapangan berdasarkan kata kunci yang dimasukkan di TextBox txtCari
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
