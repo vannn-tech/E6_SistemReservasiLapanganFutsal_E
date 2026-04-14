@@ -114,7 +114,7 @@ namespace Reservasi_Futsal
 
         private void btnInsert_Click(object sender, EventArgs e) // Event handler untuk tombol "Insert" yang digunakan untuk menambahkan data baru ke tabel Lapangan
         {
-            if (string.IsNullOrEmpty(txtNama.Text) || string.IsNullOrEmpty(cmbStatus.Text))
+            if (string.IsNullOrEmpty(txtNama.Text) || string.IsNullOrEmpty(cmbStatus.Text)) // Validasi untuk memastikan bahwa field Nama dan Status tidak kosong sebelum melakukan insert
             {
                 MessageBox.Show("Nama dan Status wajib diisi!", "Peringatan");
                 return;
